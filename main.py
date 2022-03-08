@@ -46,7 +46,7 @@ def main():
 
 @st.cache()
 def load_data():
-    csv_file = "/Users/jonasgrossmann/git_repos/AnabelDiss/anabel_master.csv"
+    csv_file = Path(__file__).parent / "anabel_master.csv"
     df = pd.read_csv(csv_file, sep=";")
 
     ind_cold = [col for col in df.columns if "Ind" in col]

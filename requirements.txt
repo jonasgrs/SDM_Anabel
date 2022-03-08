@@ -1,1 +1,2 @@
 matplotlib==3.5.1
+eaborn==0.11.2
